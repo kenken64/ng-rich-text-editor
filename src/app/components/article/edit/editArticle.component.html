@@ -1,0 +1,23 @@
+<form [formGroup]="publisherForm" (ngSubmit)="updatePublish()">
+    <div class="publishform-container">
+        <mat-form-field>
+          <input matInput placeholder="Subject">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Category">
+            <mat-option value="B">Business</mat-option>
+            <mat-option value="T">Technology</mat-option>
+            <mat-option value="E">Entertainment</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Publish by">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea [froalaEditor] formControlName="formModel"></textarea>
+        </mat-form-field>
+    </div>
+  <br>
+  <button mat-raised-button type="submit">Publish</button>
+</form>

@@ -1,0 +1,8 @@
+.publishform-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.publishform-container > * {
+    width: 100%;
+}
